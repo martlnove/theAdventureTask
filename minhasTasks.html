@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Negócios em TI - MVP</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .app-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+        }
+        .app-view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #dee2e6;
+            height: 81.6vh;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-image: url('img/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .menu-background {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            width: 100%;
+            background-color: rgba(215, 212, 124, 0.9);
+            margin-top: 8rem;
+            border-radius: 10px;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .completed-task {
+            text-decoration: line-through;
+        }
+        #taskTableBody .task-cell {
+            text-align: left;
+        }
+        .status-cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            width: 34px;
+            height: 34px;
+        }
+        thead tr {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        thead th {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h1 class="text-center mb-4">Agência de Negócios em TI - MVP</h1>
+        <div class="app-container">
+            <div class="app-view">
+                <table class="table table-striped menu-background">
+                    <thead>
+                        <tr>
+                            <th><img src="img/sword-task.png" alt="Task" class="icon"></th>
+                            <th><img src="img/dragon-dificulty.png" alt="Dificuldade" class="icon"></th>
+                            <th><img src="img/clock-duration.png" alt="Duração" class="icon"></th>
+                            <th><img src="img/shield-status.png" alt="Status" class="icon"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskTableBody" class="text-center">
+                    </tbody>
+                </table>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info" onclick="window.location.href='home.html'">Voltar</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='novaTask.html'">Adicionar Task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/minhasTasks.js"></script>
+</body>
+</html>

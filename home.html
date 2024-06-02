@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agência de Negócios em TI - MVP</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .app-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f8f9fa;
+                width: 100%; 
+            }
+            .container-fluid {
+                padding-top: 100px;
+            }
+            .app-view {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                max-width: 400px;
+                border: 1px solid #dee2e6;
+                height: 81.6vh;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.8);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                background-image: url('img/background.png');
+                background-size: cover;
+                background-position: center;
+            }
+            .menu-background {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px;
+                width: 100%;
+                background-color: rgba(215, 212, 124, 0.9);
+                margin-top: 8rem;
+                border-radius: 10px;
+            }
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .menu-item {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                width: 100%;
+                padding: 1rem;
+                border-radius: 100px;
+            }
+            .menu-item:hover {
+                background-color: #e9ecef;
+            }
+            .menu-icon {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+            }
+            .btn-group {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid py-4">
+            <h1 class="text-center mb-4">Agência de Negócios em TI - MVP</h1>
+            <div class="app-container">
+                <div class="app-view">
+                    <div class="menu-background">
+                        <div class="menu">
+                            <div class="menu-item" onclick="location.href='minhasTasks.html';">
+                                <img src="img/sword-icon.png" class="menu-icon" alt="Minhas Tasks">
+                                Minhas Tasks
+                            </div>
+                            <div class="menu-item">
+                                <img src="img/sword-icon.png" class="menu-icon" alt="Journey">
+                                Journey
+                            </div>
+                            <div class="menu-item">
+                                <img src="img/sword-icon.png" class="menu-icon" alt="Conquistas">
+                                Conquistas
+                            </div>
+                            <div class="menu-item" onclick="location.href='minhaConta.html';">
+                                <img src="img/sword-icon.png" class="menu-icon" alt="Minha Conta">
+                                Minha Conta
+                            </div>
+                            <div class="menu-item" onclick="location.href='novaTask.html';">
+                                <img src="img/sword-icon.png" class="menu-icon" alt="Nova Task">
+                                Nova Task
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-info" onclick="history.back();">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

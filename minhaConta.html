@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .app-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%; 
+            background-color: #f8f9fa;
+        }
+        .container-fluid {
+            padding-top: 100px;
+        }
+        .app-view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #dee2e6;
+            height: 81.6vh;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-image: url('img/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+        form {
+            padding-top: 7rem;
+            align-self: center;
+            width: 100%;
+            max-width: 300px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h1 class="text-center mb-4">Agência de Negócios em TI - MVP</h1>
+        <div class="app-container">
+            <div class="app-view">
+                <form id="cadastroForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nome" required placeholder="Altere seu nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" required placeholder="Altere seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="senha" required placeholder="Altere sua senha">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="repetir-senha" required placeholder="Repita sua senha">
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-success">Salvar</button>
+                        <button type="button" class="btn btn-secondary" onclick="window.location.href='home.html'">Voltar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
