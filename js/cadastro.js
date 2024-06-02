@@ -12,5 +12,5 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     sessionStorage.setItem('senha', senha);
 
     alert("Usuário criado com sucesso!");
-    window.location.href = '../index.html';
+    window.location.href = 'index.html';
 });
